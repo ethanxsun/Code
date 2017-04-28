@@ -1,4 +1,3 @@
-#clean
 getwd()
 setwd("./R")
 rm(list=ls())

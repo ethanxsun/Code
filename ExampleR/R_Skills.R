@@ -37,6 +37,3 @@ x[x$var2 > 8, ] # na is showing
 which(x$var2 > 8)
 x[which(x$var2 > 8), ] # remove na
 
-#hello
-
-
