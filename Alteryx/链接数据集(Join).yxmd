@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="174" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CustomerID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_ID" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="6" />
+          <Fields>
+            <Field name="CustomerID" />
+            <Field name="FirstName" />
+            <Field name="LastName" />
+            <Field name="Gender" />
+            <Field name="JoinDate" />
+          </Fields>
+          <Data>
+            <r>
+              <c>49</c>
+              <c>Thomas</c>
+              <c>Edison</c>
+              <c>M</c>
+              <c>2014-08-21</c>
+            </r>
+            <r>
+              <c>456</c>
+              <c>Galileo</c>
+              <c />
+              <c>M</c>
+              <c>2014-04-01</c>
+            </r>
+            <r>
+              <c>31</c>
+              <c>Benjamin</c>
+              <c>Franklin</c>
+              <c>M</c>
+              <c>2014-12-21</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>Dorothy</c>
+              <c>Gerber</c>
+              <c>F</c>
+              <c>2014-10-01</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>Louis</c>
+              <c>Pasteur</c>
+              <c>M</c>
+              <c>2013-09-06</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>Tim</c>
+              <c>Berners-Lee</c>
+              <c>M</c>
+              <c>2014-01-26</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>File A: Core Customer Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="ID" />
+            <Field name="FirstPurchaseDate" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>2013-09-06</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>2014-01-26</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>2012-05-05</c>
+            </r>
+            <r>
+              <c>31</c>
+              <c>2014-12-21</c>
+            </r>
+            <r>
+              <c>49</c>
+              <c>2014-08-21</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="1">
+          <Name />
+          <AnnotationText>File B: ID and FirstPurchaseDate</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>链接数据集</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

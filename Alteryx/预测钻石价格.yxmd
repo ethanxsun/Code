@@ -8,7 +8,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\new-diamonds.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\new-diamonds.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -25,15 +25,18 @@
           <DefaultAnnotationText>new-diamonds.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
-            <Field name="carat" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
-            <Field name="cut" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
-            <Field name="cut_ord" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
-            <Field name="color" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
-            <Field name="clarity" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
-            <Field name="clarity_ord" size="254" source="File: Y:\Data\new-diamonds.csv" type="V_String" />
+            <Field name="Field_1" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
+            <Field name="carat" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
+            <Field name="cut" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
+            <Field name="cut_ord" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
+            <Field name="color" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
+            <Field name="clarity" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
+            <Field name="clarity_ord" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -69,7 +72,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\diamonds.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\diamonds.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -86,16 +89,19 @@
           <DefaultAnnotationText>diamonds.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="carat" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="cut" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="cut_ord" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="color" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="clarity" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="clarity_ord" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
-            <Field name="price" size="254" source="File: Y:\Data\diamonds.csv" type="V_String" />
+            <Field name="Field_1" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="carat" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="cut" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="cut_ord" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="color" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="clarity" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="clarity_ord" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
+            <Field name="price" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -143,9 +149,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Linear_Regression.yxmc" />
     </Node>
@@ -155,7 +158,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3660_5e114023cd1a4b3a8d9e3d19a8dc8d1b_\Engine_1960_2101eebdc23240129c3996dc70b1aef2_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_36620de84154469aba63ccd69a05b5e9_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -269,7 +272,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3660_5e114023cd1a4b3a8d9e3d19a8dc8d1b_\Engine_1960_5c25e1c9b4e74844ab460db6683560e0_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_4c9ebd28912c40248a1470f00950c8a8_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -297,7 +300,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3660_5e114023cd1a4b3a8d9e3d19a8dc8d1b_\Engine_1960_fcc83a304d654b08b9ff6fa62fc51c1f_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_7d3203190d0c4378b89ca6882a522976_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -362,7 +365,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3660_5e114023cd1a4b3a8d9e3d19a8dc8d1b_\Engine_1960_b7d8c8e0d6404daeb31e24f38028e42b_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_ac4efaa395c84f68aeec9a51e20f8984_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -440,7 +443,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3660_5e114023cd1a4b3a8d9e3d19a8dc8d1b_\Engine_1960_fae67aafa6a04e0eb832fe40599738c5_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_73224a07b8b7406c99c962a1e16c9519_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -539,7 +542,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>PredictDiamondPrice</Name>
+      <Name>预测钻石价格</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

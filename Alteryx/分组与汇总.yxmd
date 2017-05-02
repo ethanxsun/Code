@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="2" SearchSubDirs="False" RecordLimit="">Y:\Data\AlteryxAnalytics\wyoming-schools.dbf</File>
+          <FormatSpecificOptions>
+            <AllStrings>False</AllStrings>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>wyoming-schools.dbf</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NCESSchool" size="12" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolName" size="30" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="V_String" />
+            <Field name="StreetAddr" size="30" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="V_String" />
+            <Field name="City" size="18" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="State" size="2" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="ZipCode" size="5" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="Zip_4" size="4" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="Enrollment" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="Double" />
+            <Field name="Telephone" size="10" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="Locale" size="1" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="LocaleDesc" size="12" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="MSA_Cat" size="10" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolType" size="1" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="TypeDesc" size="16" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolLeve" size="1" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="LevelDesc" size="10" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="LowestGrad" size="2" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="HighestGra" size="2" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="282" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ZipCode" action="GroupBy" rename="ZipCode" />
+            <SummarizeField field="NCESSchool" action="Count" rename="Count" />
+            <SummarizeField field="Enrollment" action="Sum" rename="Sum_Enrollment" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>ZipCode</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>82009</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ZipCode] = "82009"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>分组与汇总</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
