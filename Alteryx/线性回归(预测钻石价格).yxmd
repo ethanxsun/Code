@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="222" />
+        <Position x="54" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -25,9 +25,6 @@
           <DefaultAnnotationText>new-diamonds.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="254" source="File: Y:\Data\AlteryxAnalytics\new-diamonds.csv" type="V_String" />
@@ -44,7 +41,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="126" y="222" />
+        <Position x="126" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -67,7 +64,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="126" />
+        <Position x="54" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -89,9 +86,6 @@
           <DefaultAnnotationText>diamonds.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="254" source="File: Y:\Data\AlteryxAnalytics\diamonds.csv" type="V_String" />
@@ -109,7 +103,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="126" y="126" />
+        <Position x="126" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -132,7 +126,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings>
-        <Position x="198" y="126" />
+        <Position x="198" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -154,11 +148,11 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="270" y="150" />
+        <Position x="270" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_36620de84154469aba63ccd69a05b5e9_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7704_3d20775110744f47b5377bd25f420ddd_\Engine_2544_b36352f7fa5040e6ace19815ef626a20_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -182,7 +176,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings>
-        <Position x="342" y="126" />
+        <Position x="342" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -218,7 +212,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings>
-        <Position x="426" y="126" />
+        <Position x="426" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -268,11 +262,11 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="510" y="126" />
+        <Position x="510" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_4c9ebd28912c40248a1470f00950c8a8_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7704_3d20775110744f47b5377bd25f420ddd_\Engine_2544_9266da68750749e2ac49e4ebdf5f13cf_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -296,11 +290,11 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="426" y="78" />
+        <Position x="426" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_7d3203190d0c4378b89ca6882a522976_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7704_3d20775110744f47b5377bd25f420ddd_\Engine_2544_f86a057a74f344b195cc58bf4746a6cc_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -324,7 +318,7 @@
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="426" y="186" />
+        <Position x="426" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -342,7 +336,7 @@
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="510" y="186" />
+        <Position x="510" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -361,11 +355,11 @@
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="606" y="186" />
+        <Position x="606" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_ac4efaa395c84f68aeec9a51e20f8984_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7704_3d20775110744f47b5377bd25f420ddd_\Engine_2544_e0669c40591947cba92de7c4a78d3db7_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -389,7 +383,7 @@
     </Node>
     <Node ToolID="33">
       <GuiSettings>
-        <Position x="198" y="54" />
+        <Position x="198" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -439,11 +433,11 @@
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="294" y="54" />
+        <Position x="294" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10368_3077996237224c8aa5505c148f2bdf7a_\Engine_3648_73224a07b8b7406c99c962a1e16c9519_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7704_3d20775110744f47b5377bd25f420ddd_\Engine_2544_29ce2c86253740ac96467d393e41f383_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -464,6 +458,78 @@
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings>
+        <Position x="126" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields" />
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7704_3d20775110744f47b5377bd25f420ddd_\Engine_2544_7b28a3158e6f4de0aed5e4b74a4da338_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="354" y="318" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>score(pricing) diamonds</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
     </Node>
   </Nodes>
   <Connections>
@@ -490,6 +556,10 @@
     <Connection>
       <Origin ToolID="5" Connection="Output" />
       <Destination ToolID="33" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="35" Connection="Field Input" />
     </Connection>
     <Connection>
       <Origin ToolID="6" Connection="Reports" />
@@ -522,6 +592,10 @@
     <Connection>
       <Origin ToolID="33" Connection="Scater Output" />
       <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Interactive" />
+      <Destination ToolID="36" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

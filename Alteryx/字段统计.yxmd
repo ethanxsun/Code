@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>churn.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Account Length" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Area Code" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Phone" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Int'l Plan" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="VMail Plan" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="VMail Message" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Day Mins" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Day Calls" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Day Charge" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Eve Mins" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Eve Calls" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Eve Charge" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Night Mins" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Night Calls" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Night Charge" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Intl Mins" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Intl Calls" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Intl Charge" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="CustServ Calls" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+            <Field name="Churn?" size="254" source="File: Y:\Data\AlteryxAnalytics\CustomerChurn\churn.txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="210" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Select Fields">State=True,Account Length=True,Area Code=True,Phone=True,Int'l Plan=True,VMail Plan=True,VMail Message=True,Day Mins=True,Day Calls=True,Day Charge=True,Eve Mins=True,Eve Calls=True,Eve Charge=True,Night Mins=True,Night Calls=True,Night Charge=True,Intl Mins=True,Intl Calls=True,Intl Charge=True,CustServ Calls=True,Churn?=True</Value>
+          <Value name="Sample Data">False</Value>
+          <Value name="Number">True</Value>
+          <Value name="NNumber">5000</Value>
+          <Value name="Percent">False</Value>
+          <Value name="NPercent">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="294" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5360_76ec5eb973d5441baecc8a91fabbdf9d_\Engine_6016_f269b6e516c4471cb15ef4fa23f535f7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Day Mins" selected="True" type="Double" size="8" />
+            <SelectField field="Day Calls" selected="True" type="Double" size="8" />
+            <SelectField field="Day Charge" selected="True" type="Double" size="8" />
+            <SelectField field="Eve Mins" selected="True" type="Double" size="8" />
+            <SelectField field="Eve Calls" selected="True" type="Int64" size="8" />
+            <SelectField field="Eve Charge" selected="True" type="Double" size="8" />
+            <SelectField field="Night Mins" selected="True" type="Double" size="8" />
+            <SelectField field="Night Calls" selected="True" type="Int64" size="8" />
+            <SelectField field="Night Charge" selected="True" type="Double" size="8" />
+            <SelectField field="Intl Mins" selected="True" type="Double" size="8" />
+            <SelectField field="Intl Calls" selected="True" type="Int64" size="8" />
+            <SelectField field="Intl Charge" selected="True" type="Double" size="8" />
+            <SelectField field="CustServ Calls" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Interactive" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Field Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>字段统计</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
