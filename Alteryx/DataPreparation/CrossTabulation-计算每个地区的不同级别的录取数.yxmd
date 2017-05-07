@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="2" SearchSubDirs="False" RecordLimit="">Y:\Data\AlteryxAnalytics\wyoming-schools.dbf</File>
+          <FormatSpecificOptions>
+            <AllStrings>False</AllStrings>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>wyoming-schools.dbf</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NCESSchool" size="12" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolName" size="30" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="V_String" />
+            <Field name="StreetAddr" size="30" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="V_String" />
+            <Field name="City" size="18" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="State" size="2" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="ZipCode" size="5" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="Zip_4" size="4" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="Enrollment" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="Double" />
+            <Field name="Telephone" size="10" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="Locale" size="1" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="LocaleDesc" size="12" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="MSA_Cat" size="10" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolType" size="1" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="TypeDesc" size="16" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="SchoolLeve" size="1" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="LevelDesc" size="10" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="LowestGrad" size="2" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+            <Field name="HighestGra" size="2" source="File: Y:\Data\AlteryxAnalytics\wyoming-schools.dbf" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ZipCode" action="GroupBy" rename="ZipCode" />
+            <SummarizeField field="LevelDesc" action="GroupBy" rename="LevelDesc" />
+            <SummarizeField field="LocaleDesc" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="174" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="ZipCode" />
+          </GroupFields>
+          <HeaderField field="LevelDesc" />
+          <DataField field="Enrollment" />
+          <Methods>
+            <Method method="Count" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ZipCode" size="5" source="CrossTab:Group:Count:" type="String" />
+            <Field name="Count_High" source="CrossTab:Header:LevelDesc:High:CountNonNulls:" type="Double" />
+            <Field name="Count_Middle" source="CrossTab:Header:LevelDesc:Middle:CountNonNulls:" type="Double" />
+            <Field name="Count_Other" source="CrossTab:Header:LevelDesc:Other:CountNonNulls:" type="Double" />
+            <Field name="Count_Primary" source="CrossTab:Header:LevelDesc:Primary:CountNonNulls:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ZipCode" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="294" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Count_High" selected="True" rename="High" />
+            <SelectField field="Count_Middle" selected="True" rename="Middle" />
+            <SelectField field="Count_Other" selected="True" rename="Other" />
+            <SelectField field="Count_Primary" selected="True" rename="Primary" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="282" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5492_20957174851b4ccf8fac95463bed9e02_\Engine_4716_819e8e5dac344a4dbcae3a1da18183a9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5492_20957174851b4ccf8fac95463bed9e02_\Engine_4716_9214b9ae702846a3a5383e38f6046dac_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="102" y="198" width="240" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>group by zipcode
+spread value of level description
+count number of enrolments</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>生成交叉图Crosstabulation</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

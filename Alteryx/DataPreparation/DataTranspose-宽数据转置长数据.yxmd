@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.0">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="10" />
+          <Fields>
+            <Field name="Product" />
+            <Field name="Category" />
+            <Field name="January" />
+            <Field name="February" />
+            <Field name="March" />
+            <Field name="April" />
+            <Field name="May" />
+            <Field name="June" />
+            <Field name="July" />
+            <Field name="August" />
+            <Field name="September" />
+            <Field name="October" />
+            <Field name="November" />
+            <Field name="December" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Graphing Calculators</c>
+              <c>General</c>
+              <c>191817</c>
+              <c>434</c>
+              <c>70654</c>
+              <c>166571</c>
+              <c>99066</c>
+              <c>64423</c>
+              <c>72846</c>
+              <c>52744</c>
+              <c>16150</c>
+              <c>98130</c>
+              <c>42312</c>
+              <c>133095</c>
+            </r>
+            <r>
+              <c>Office Supplies</c>
+              <c>General</c>
+              <c>156628</c>
+              <c>82183</c>
+              <c>125043</c>
+              <c>11205</c>
+              <c>130896</c>
+              <c>31214</c>
+              <c>199932</c>
+              <c>121453</c>
+              <c>61049</c>
+              <c>16068</c>
+              <c>18098</c>
+              <c>46061</c>
+            </r>
+            <r>
+              <c>Encyclopedias</c>
+              <c>Educational</c>
+              <c>6299</c>
+              <c>119153</c>
+              <c>161717</c>
+              <c>145195</c>
+              <c>22305</c>
+              <c>38385</c>
+              <c>9183</c>
+              <c>157398</c>
+              <c>169316</c>
+              <c>30902</c>
+              <c>74336</c>
+              <c>17180</c>
+            </r>
+            <r>
+              <c>Building Blocks</c>
+              <c>Fun and Games</c>
+              <c>8313</c>
+              <c>184270</c>
+              <c>186021</c>
+              <c>190255</c>
+              <c>8211</c>
+              <c>134736</c>
+              <c>154287</c>
+              <c>4735</c>
+              <c>71620</c>
+              <c>113519</c>
+              <c>20765</c>
+              <c>91844</c>
+            </r>
+            <r>
+              <c>Books about Dinosaurs</c>
+              <c>Fun and Games</c>
+              <c>193667</c>
+              <c>76441</c>
+              <c>163244</c>
+              <c>116158</c>
+              <c>42346</c>
+              <c>166919</c>
+              <c>153584</c>
+              <c>72374</c>
+              <c>155810</c>
+              <c>44161</c>
+              <c>55709</c>
+              <c>33694</c>
+            </r>
+            <r>
+              <c>Viggo Mortenson DVDs</c>
+              <c>Fun and Games</c>
+              <c>181291</c>
+              <c>178860</c>
+              <c>144830</c>
+              <c>35341</c>
+              <c>136331</c>
+              <c>199431</c>
+              <c>42309</c>
+              <c>42458</c>
+              <c>184727</c>
+              <c>80648</c>
+              <c>54734</c>
+              <c>132706</c>
+            </r>
+            <r>
+              <c>Clothing</c>
+              <c>General</c>
+              <c>6988</c>
+              <c>71830</c>
+              <c>69881</c>
+              <c>137635</c>
+              <c>168495</c>
+              <c>118806</c>
+              <c>199716</c>
+              <c>153901</c>
+              <c>145946</c>
+              <c>20584</c>
+              <c>190893</c>
+              <c>169875</c>
+            </r>
+            <r>
+              <c>Frisbee and Frisbee Accessories</c>
+              <c>Fun and Games</c>
+              <c>4940</c>
+              <c>105607</c>
+              <c>53949</c>
+              <c>72655</c>
+              <c>140850</c>
+              <c>68332</c>
+              <c>154956</c>
+              <c>158538</c>
+              <c>116732</c>
+              <c>153754</c>
+              <c>46668</c>
+              <c>34578</c>
+            </r>
+            <r>
+              <c>Legumes</c>
+              <c>General</c>
+              <c>73467</c>
+              <c>154459</c>
+              <c>92995</c>
+              <c>68466</c>
+              <c>159429</c>
+              <c>130945</c>
+              <c>32288</c>
+              <c>140673</c>
+              <c>153088</c>
+              <c>73637</c>
+              <c>176343</c>
+              <c>137683</c>
+            </r>
+            <r>
+              <c>Microscopes</c>
+              <c>Educational</c>
+              <c>206</c>
+              <c>324</c>
+              <c>925</c>
+              <c>633</c>
+              <c>487</c>
+              <c>168</c>
+              <c>235</c>
+              <c>154</c>
+              <c>1432</c>
+              <c>861</c>
+              <c>530</c>
+              <c>1279</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Product" />
+            <Field field="Category" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Product" selected="False" />
+            <Field field="Category" selected="False" />
+            <Field field="January" selected="True" />
+            <Field field="February" selected="True" />
+            <Field field="March" selected="True" />
+            <Field field="April" selected="True" />
+            <Field field="May" selected="True" />
+            <Field field="June" selected="True" />
+            <Field field="July" selected="True" />
+            <Field field="August" selected="True" />
+            <Field field="September" selected="True" />
+            <Field field="October" selected="True" />
+            <Field field="November" selected="True" />
+            <Field field="December" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Month] = "March" OR [Month] = "June"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Month] = "March" OR [Month] = "June"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Product" selected="True" />
+            <SelectField field="Category" selected="True" />
+            <SelectField field="Name" selected="True" rename="Month" />
+            <SelectField field="Value" selected="True" rename="Sales" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="486" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="594" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Sum_Sales" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_Sales - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="138" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>original data is wide</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="18" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>transpose into long</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataTranspose-宽数据转置长数据</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
