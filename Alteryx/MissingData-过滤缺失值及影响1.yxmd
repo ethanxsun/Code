@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="18" y="186" />
+        <Position x="54" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -20,9 +20,6 @@
 Table=`Original$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Respondent ID" source="File: Y:\Data\AlteryxAnalytics\missingdata.xlsx|||`Original$`" type="Double" />
@@ -37,7 +34,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="174" y="186" />
+        <Position x="210" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -58,7 +55,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="3">
       <GuiSettings>
-        <Position x="282" y="186" />
+        <Position x="318" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -74,19 +71,16 @@ Table=`Original$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="378" y="210" />
+        <Position x="414" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3928_a91820087f024e3bbd1f2683a01e753f_\Engine_3648_6ca77d7f8ba1444fb6520e1f3a566d2a_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4200_027b13ed9a42437c8708d464aeeb0e17_\Engine_3752_9c8b9e07c25f44dea3f9678da0a1c4a2_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -110,7 +104,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="246" y="294" />
+        <Position x="282" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -130,7 +124,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="342" y="282" />
+        <Position x="378" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -150,7 +144,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="462" y="270" />
+        <Position x="498" y="222" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -170,7 +164,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="558" y="258" />
+        <Position x="594" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -190,7 +184,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="9">
       <GuiSettings>
-        <Position x="630" y="246" />
+        <Position x="666" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -206,19 +200,16 @@ Table=`Original$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="714" y="258" />
+        <Position x="750" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3928_a91820087f024e3bbd1f2683a01e753f_\Engine_3648_3961d3dbc31a40b4bda13dbc86967c48_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4200_027b13ed9a42437c8708d464aeeb0e17_\Engine_3752_dcbd7746b06148f690cfae6c5dac3a78_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -242,7 +233,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="11">
       <GuiSettings>
-        <Position x="246" y="102" />
+        <Position x="282" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -287,19 +278,16 @@ Table=`Original$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="342" y="102" />
+        <Position x="378" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3928_a91820087f024e3bbd1f2683a01e753f_\Engine_3648_a165d021e53742959fbe7c558b9097d3_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4200_027b13ed9a42437c8708d464aeeb0e17_\Engine_3752_9081ad3253184a4182fcc2865a0823d6_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -323,7 +311,7 @@ Table=`Original$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="13">
       <GuiSettings>
-        <Position x="630" y="174" />
+        <Position x="666" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -368,19 +356,16 @@ Table=`Original$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="714" y="174" />
+        <Position x="750" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3928_a91820087f024e3bbd1f2683a01e753f_\Engine_3648_5319c045fda2439aaf4fcba861d34b04_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4200_027b13ed9a42437c8708d464aeeb0e17_\Engine_3752_1aaa23f079f542a2a8c52c596039e7cb_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -475,7 +460,7 @@ Table=`Original$`</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>过滤缺失值及影响</Name>
+      <Name>过滤缺失值及影响1</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

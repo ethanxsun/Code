@@ -59,7 +59,7 @@ Table=`Data$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4556_b5e3acb6aa71445ea6cd7dbaa347ee16_\Engine_3648_ba8f9ee3ed4141c5a75cf81067ada6e7_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4972_8c36ff5e10724c74be188441c6bde652_\Engine_3752_30bc3c8f44f14df1bad67f49244666cd_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -137,7 +137,7 @@ Table=`Data$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4556_b5e3acb6aa71445ea6cd7dbaa347ee16_\Engine_3648_43b3916739a24e6185ee0862ecaedfe2_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4972_8c36ff5e10724c74be188441c6bde652_\Engine_3752_db7f52c7ef8f4e10872eaf47464aa497_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -275,7 +275,7 @@ Table=`Data$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4556_b5e3acb6aa71445ea6cd7dbaa347ee16_\Engine_3648_930356e200374670a52216f2b60ee022_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4972_8c36ff5e10724c74be188441c6bde652_\Engine_3752_e55e61aae1b746baa9e7710e53cb54a4_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -323,7 +323,7 @@ Table=`Data$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4556_b5e3acb6aa71445ea6cd7dbaa347ee16_\Engine_3648_bff0a2587e2a46019ccf7a46a3444282_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4972_8c36ff5e10724c74be188441c6bde652_\Engine_3752_f8a082028f7542e5bf5a7fc38a3f77e7_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -351,7 +351,7 @@ Table=`Data$`</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4556_b5e3acb6aa71445ea6cd7dbaa347ee16_\Engine_3648_e68d546a21ee427884fb75f5d57bc86f_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4972_8c36ff5e10724c74be188441c6bde652_\Engine_3752_5cdfecf87689443dac294776f17b7969_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -450,7 +450,7 @@ Table=`Data$`</DefaultAnnotationText>
           <Value name="y binary">False</Value>
           <Value name="y level" />
           <Value name="reg line">True</Value>
-          <Value name="smooth line">True</Value>
+          <Value name="smooth line">False</Value>
           <Value name="smooth span">50</Value>
           <Value name="spread">True</Value>
           <Value name="boxplots">True</Value>
@@ -497,7 +497,21 @@ Table=`Data$`</DefaultAnnotationText>
         <Position x="498" y="402" />
       </GuiSettings>
       <Properties>
-        <Configuration />
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4972_8c36ff5e10724c74be188441c6bde652_\Engine_3752_53b56c5653e24648b26ce4377a1b454d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -599,7 +613,7 @@ Table=`Data$`</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>填补缺失值及影响</Name>
+      <Name>填补缺失值及影响(Imputation)</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

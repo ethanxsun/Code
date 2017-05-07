@@ -63,3 +63,14 @@ with(airquality,{
 
 
 
+# check point example
+par(mfrow = c(1,1))
+example(points)
+
+
+
+x <- rnorm(100)
+y <- x + rnorm(100)
+plot(x, y, type = "n")    # make the plot but not use data
+plot(x, y)
+        

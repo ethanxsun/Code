@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="18" />
+        <Position x="54" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -20,9 +20,6 @@
 Table=`Data$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Age" source="File: Y:\Data\AlteryxAnalytics\outlierdata.xlsx|||`Data$`" type="Double" />
@@ -50,19 +47,16 @@ Table=`Data$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="354" y="90" />
+        <Position x="366" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9484_52cd53076e4a4e7b99406e5ca12c1619_\Engine_3648_32a06078963e4ff8bb84c87f7792bcc2_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4996_6c8bbcb8d4c54938a1ad71f4b84524e9_\Engine_3752_a50fdef7d9a9471baf34d718838051db_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -86,7 +80,7 @@ Table=`Data$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="4">
       <GuiSettings>
-        <Position x="210" y="162" />
+        <Position x="246" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -131,19 +125,16 @@ Table=`Data$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="306" y="162" />
+        <Position x="342" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9484_52cd53076e4a4e7b99406e5ca12c1619_\Engine_3648_f47e7ae962534121b408b1b31c19f708_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4996_6c8bbcb8d4c54938a1ad71f4b84524e9_\Engine_3752_68c6689b607a428c9aa7153784acdf82_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -167,7 +158,7 @@ Table=`Data$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="210" y="246" />
+        <Position x="186" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -190,7 +181,7 @@ Table=`Data$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="7">
       <GuiSettings>
-        <Position x="282" y="234" />
+        <Position x="258" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -235,19 +226,16 @@ Table=`Data$`</DefaultAnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="366" y="234" />
+        <Position x="342" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9484_52cd53076e4a4e7b99406e5ca12c1619_\Engine_3648_331316a387504c57a2c6607450f0cf94_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_4996_6c8bbcb8d4c54938a1ad71f4b84524e9_\Engine_3752_9efe0104247e424a983d36a3405b5d8a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -270,35 +258,17 @@ Table=`Data$`</DefaultAnnotationText>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="9">
-      <GuiSettings Plugin="AlteryxReportChartGui.AlteryxReportChartGui">
-        <Position x="306" y="-6" />
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="90" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <ChartType>BoxAndWhisker</ChartType>
-          <GroupingFields orderChanged="False" />
-          <LabelField />
-          <GeneralStyles ThreeDInterior="false" GradientColoring="false" ChartSizeW="432" ChartSizeH="288" Resolution="2x (192 dpi)" ChartTitle="" ChartTitleSize="14" ChartSubTitle="" ChartSubTitleSize="12" ChartPrimaryFont="Microsoft Sans Serif" />
-          <TitleStyles ChangeTitleFont="false" ChartTitleFont="Microsoft Sans Serif" ChartTitleSize="14" ChartTitleColor="#000000" ChartTitleAlignment="Center" ChangeSubTitleFont="false" ChartSubTitleFont="Microsoft Sans Serif" ChartSubTitleSize="12" ChartSubTitleColor="#000000" SubTitleAlignment="Center" ChangeLegendTextFont="false" LegendTextFont="Microsoft Sans Serif" LegendTextSize="12" LegendTextColor="#000000" />
-          <Styles UseChartBorder="false" ChartBorderWidth="2" ChartBorderColor="#000000" UseAreaBorder="false" AreaBorderWidth="2" AreaBorderColor="#000000" ChartBGColor="#ffffff" ChartAreaBGColor="#ffffff" ChartInteriorBGColor="#ffffff" />
-          <ChartTypeStyles ShowChartLegend="true" LegendSeparateImage="false" LegendPosition="Top" LegendAlignment="Center" UseLegendBorder="false" LegendBorderWidth="2" LegendBorderColor="#000000" />
-          <YAxis YAxisLabelFont="Microsoft Sans Serif" YAxisLabelSize="8" YAxisLabelColor="#000000" YAxisTitle="" YAxisTitleFont="Microsoft Sans Serif" YAxisTitleSize="10" YAxisTitleColor="#000000" YAxisShowGrid="true" YPrefix="" YPostfix="" YAxisOverrideIncrement="false" YAxisIncrement="100" YAxisOverrideBaseline="false" YAxisBaseline="0" YAxisOverrideTopline="false" YAxisTopline="1000" UseYAxisHiliteline="false" YAxisHiliteValue="0" YAxisHiliteColor="#000000" YAxisOverrideDecimalPlaces="false" YAxisNumDecimalPlaces="0" />
-          <XAxis XAxisLabelFont="Microsoft Sans Serif" XAxisLabelSize="8" XAxisLabelColor="#000000" XAxisTitle="" XAxisTitleFont="Microsoft Sans Serif" XAxisTitleSize="10" XAxisTitleColor="#000000" XAxisShowGrid="true" />
-          <StylesSeries1 SeriesStyleMode="Standard" ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#b30023" SeriesBorderWidth="2" SeriesBorderColor="#000000" LegendText="">
-            <SeriesFormulas NumFormulas="0" />
-          </StylesSeries1>
-          <WatermarkStyles UseWatermark="None" WatermarkText="Property of Alteryx, Inc." WatermarkTextFont="Microsoft Sans Serif" WatermarkTextSize="14" WatermarkTextColor="#000000" WatermarkOpacity="60" WatermarkImage="" />
-          <AllowMultiple value="true" />
-          <CombinationChart value="false" />
-          <SeriesList numSeries="1">
-            <Series1>
-              <Y_ValueField yValueName="max" yValueDesc="Maximum">[None]</Y_ValueField>
-              <Y_ValueField yValueName="upper" yValueDesc="Upper Quartile">Age</Y_ValueField>
-              <Y_ValueField yValueName="median" yValueDesc="Median">Age</Y_ValueField>
-              <Y_ValueField yValueName="lower" yValueDesc="Lower Quartile">Age</Y_ValueField>
-              <Y_ValueField yValueName="min" yValueDesc="Minimum">[None]</Y_ValueField>
-            </Series1>
-          </SeriesList>
+          <Text>find outlier</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -306,27 +276,19 @@ Table=`Data$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxReportChart.dll" EngineDllEntryPoint="AlteryxReportChartPlugin" />
     </Node>
     <Node ToolID="10">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="414" y="-6" />
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="186" width="100" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9484_52cd53076e4a4e7b99406e5ca12c1619_\Engine_3648_646343c8e473489e854e94ec66c17b70_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
+          <Text>how it affects regression</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -334,7 +296,26 @@ Table=`Data$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="294" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>remove outliers and check regression again</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
     </Node>
   </Nodes>
   <Connections>
@@ -351,10 +332,6 @@ Table=`Data$`</DefaultAnnotationText>
       <Destination ToolID="6" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="9" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="2" Connection="Interactive" />
       <Destination ToolID="3" Connection="Input" />
     </Connection>
@@ -369,10 +346,6 @@ Table=`Data$`</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="7" Connection="Scater Output" />
       <Destination ToolID="8" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="9" Connection="Output" />
-      <Destination ToolID="10" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -393,7 +366,7 @@ Table=`Data$`</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>过滤异常值及影响</Name>
+      <Name>Outliers-过滤异常值及影响</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

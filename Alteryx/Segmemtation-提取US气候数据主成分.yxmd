@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="30" y="102" />
+        <Position x="54" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -25,9 +25,6 @@
           <DefaultAnnotationText>USClimateByCity.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="StoreID" size="254" source="File: Y:\Data\AlteryxAnalytics\ClusteringNSegmemtation\USClimateByCity.csv" type="V_String" />
@@ -96,7 +93,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="114" y="102" />
+        <Position x="138" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -115,7 +112,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
-        <Position x="114" y="162" />
+        <Position x="138" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -255,7 +252,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="210" y="162" />
+        <Position x="234" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -276,11 +273,11 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="198" y="102" />
+        <Position x="222" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10016_57e7862a9f904961832b34f78322a94b_\Engine_10408_1ee7647d5f0e42cf8cdc72f3eec045d3_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_25ce6ef980c54460b63934bc9ff3db6f_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -299,11 +296,11 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings>
-        <Position x="306" y="162" />
+        <Position x="330" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="Select Fields">StoreID=False,City=False,State=False,Date Last Winter Freeze=True,Date First Winter Freeze=True,Growing Season Length=True,Precip Jan=True,Precip Feb=True,Precip Mar=True,Precip Apr=True,Precip May=True,Precip Jun=True,Precip Jul=True,Precip Aug=True,Precip Sep=True,Precip Oct=True,Precip Nov=True,Precip Dec=True,Rain Jan=True,Rain Feb=True,Rain Mar=True,Rain Apr=True,Rain May=True,Rain Jun=True,Rain Jul=True,Rain Aug=True,Rain Sep=True,Rain Oct=True,Rain Nov=True,Rain Dec=True,Snow Jan=True,Snow Feb=True,Snow Mar=True,Snow Apr=True,Snow May=True,Snow Jun=True,Snow Jul=True,Snow Aug=True,Snow Sep=True,Snow Oct=True,Snow Nov=True,Snow Dec=True,Temp Jan=True,Temp Feb=True,Temp Mar=True,Temp Apr=True,Temp May=True,Temp Jun=True,Temp Jul=True,Temp Aug=True,Temp Sep=True,Temp Oct=True,Temp Nov=True,Temp Dec=True,Elevation=True,Longitude=True,Latitude=True,LastWinterFreezeDiff=True,FirstWinterFreezeDiff=True</Value>
+          <Value name="Select Fields">StoreID=False,City=False,State=False,Date Last Winter Freeze=False,Date First Winter Freeze=False,Growing Season Length=False,Precip Jan=False,Precip Feb=False,Precip Mar=False,Precip Apr=False,Precip May=False,Precip Jun=False,Precip Jul=False,Precip Aug=False,Precip Sep=False,Precip Oct=False,Precip Nov=False,Precip Dec=False,Rain Jan=False,Rain Feb=False,Rain Mar=False,Rain Apr=False,Rain May=False,Rain Jun=False,Rain Jul=False,Rain Aug=False,Rain Sep=False,Rain Oct=False,Rain Nov=False,Rain Dec=False,Snow Jan=True,Snow Feb=True,Snow Mar=True,Snow Apr=True,Snow May=True,Snow Jun=True,Snow Jul=True,Snow Aug=True,Snow Sep=True,Snow Oct=True,Snow Nov=True,Snow Dec=True,Temp Jan=False,Temp Feb=False,Temp Mar=False,Temp Apr=False,Temp May=False,Temp Jun=False,Temp Jul=False,Temp Aug=False,Temp Sep=False,Temp Oct=False,Temp Nov=False,Temp Dec=False,Elevation=False,Longitude=False,Latitude=False,LastWinterFreezeDiff=False,FirstWinterFreezeDiff=False</Value>
           <Value name="Sample Data">False</Value>
           <Value name="Number">True</Value>
           <Value name="NNumber">5000</Value>
@@ -315,19 +312,16 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="378" y="174" />
+        <Position x="402" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10016_57e7862a9f904961832b34f78322a94b_\Engine_10408_5d09a229974942559fd949cddfc6aef2_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_e1ea45a1f5e6486999a98d433e101d46_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -351,14 +345,14 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="30" y="18" width="396" height="40" />
+        <Position x="54" y="54" width="396" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Data Explorary</Text>
           <Font name="Segoe UI" size="8.25" style="0" />
           <TextColor name="Black" />
-          <FillColor name="Yellow" />
+          <FillColor r="128" g="255" b="255" />
           <Shape shape="0" />
           <Justification Justification="4" />
         </Configuration>
@@ -371,7 +365,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings>
-        <Position x="642" y="90" />
+        <Position x="666" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -394,9 +388,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="StoreID" source="R-DATA:" type="Int32" />
@@ -473,7 +464,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="486" y="102" />
+        <Position x="510" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -493,11 +484,11 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="738" y="102" />
+        <Position x="762" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_10016_57e7862a9f904961832b34f78322a94b_\Engine_10408_eb6662e704c44c9d948a6989a6ba9551_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_c0437c03edf84315b501a687767b25ed_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -521,14 +512,14 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="450" y="18" width="132" height="40" />
+        <Position x="474" y="54" width="132" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Data Prep</Text>
           <Font name="Segoe UI" size="8.25" style="0" />
           <TextColor name="Black" />
-          <FillColor name="White" />
+          <FillColor r="128" g="255" b="255" />
           <Shape shape="0" />
           <Justification Justification="4" />
         </Configuration>
@@ -541,14 +532,14 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="594" y="18" width="360" height="40" />
+        <Position x="618" y="54" width="360" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Data Analytics</Text>
           <Font name="Segoe UI" size="8.25" style="0" />
           <TextColor name="Black" />
-          <FillColor name="White" />
+          <FillColor r="128" g="255" b="255" />
           <Shape shape="0" />
           <Justification Justification="4" />
         </Configuration>
@@ -561,7 +552,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="810" y="78" />
+        <Position x="834" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -582,11 +573,506 @@
           <DefaultAnnotationText>ClimatePCAResultForTemperture.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="666" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Precip Jan + Precip Feb + Precip Mar + Precip Apr + Precip May + Precip Jun + Precip Jul + Precip Aug + Precip Sep + Precip Oct + Precip Nov + Precip Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" source="R-DATA:" type="Int32" />
+            <Field name="City" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.Last.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.First.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Growing.Season.Length" source="R-DATA:" type="Int32" />
+            <Field name="Precip.Jan" source="R-DATA:" type="Double" />
+            <Field name="Precip.Feb" source="R-DATA:" type="Double" />
+            <Field name="Precip.Mar" source="R-DATA:" type="Double" />
+            <Field name="Precip.Apr" source="R-DATA:" type="Double" />
+            <Field name="Precip.May" source="R-DATA:" type="Double" />
+            <Field name="Precip.Jun" source="R-DATA:" type="Double" />
+            <Field name="Precip.Jul" source="R-DATA:" type="Double" />
+            <Field name="Precip.Aug" source="R-DATA:" type="Double" />
+            <Field name="Precip.Sep" source="R-DATA:" type="Double" />
+            <Field name="Precip.Oct" source="R-DATA:" type="Double" />
+            <Field name="Precip.Nov" source="R-DATA:" type="Double" />
+            <Field name="Precip.Dec" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jan" source="R-DATA:" type="Double" />
+            <Field name="Rain.Feb" source="R-DATA:" type="Double" />
+            <Field name="Rain.Mar" source="R-DATA:" type="Double" />
+            <Field name="Rain.Apr" source="R-DATA:" type="Double" />
+            <Field name="Rain.May" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jun" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jul" source="R-DATA:" type="Double" />
+            <Field name="Rain.Aug" source="R-DATA:" type="Double" />
+            <Field name="Rain.Sep" source="R-DATA:" type="Double" />
+            <Field name="Rain.Oct" source="R-DATA:" type="Double" />
+            <Field name="Rain.Nov" source="R-DATA:" type="Double" />
+            <Field name="Rain.Dec" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jan" source="R-DATA:" type="Double" />
+            <Field name="Snow.Feb" source="R-DATA:" type="Double" />
+            <Field name="Snow.Mar" source="R-DATA:" type="Double" />
+            <Field name="Snow.Apr" source="R-DATA:" type="Double" />
+            <Field name="Snow.May" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jun" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jul" source="R-DATA:" type="Double" />
+            <Field name="Snow.Aug" source="R-DATA:" type="Double" />
+            <Field name="Snow.Sep" source="R-DATA:" type="Double" />
+            <Field name="Snow.Oct" source="R-DATA:" type="Double" />
+            <Field name="Snow.Nov" source="R-DATA:" type="Double" />
+            <Field name="Snow.Dec" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jan" source="R-DATA:" type="Double" />
+            <Field name="Temp.Feb" source="R-DATA:" type="Double" />
+            <Field name="Temp.Mar" source="R-DATA:" type="Double" />
+            <Field name="Temp.Apr" source="R-DATA:" type="Double" />
+            <Field name="Temp.May" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jun" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jul" source="R-DATA:" type="Double" />
+            <Field name="Temp.Aug" source="R-DATA:" type="Double" />
+            <Field name="Temp.Sep" source="R-DATA:" type="Double" />
+            <Field name="Temp.Oct" source="R-DATA:" type="Double" />
+            <Field name="Temp.Nov" source="R-DATA:" type="Double" />
+            <Field name="Temp.Dec" source="R-DATA:" type="Double" />
+            <Field name="Elevation" source="R-DATA:" type="Double" />
+            <Field name="Longitude" source="R-DATA:" type="Double" />
+            <Field name="Latitude" source="R-DATA:" type="Double" />
+            <Field name="LastWinterFreezeDiff" source="R-DATA:" type="Int32" />
+            <Field name="FirstWinterFreezeDiff" source="R-DATA:" type="Int32" />
+            <Field name="PC1" source="R-DATA:" type="Double" />
+            <Field name="PC2" source="R-DATA:" type="Double" />
+            <Field name="PC3" source="R-DATA:" type="Double" />
+            <Field name="PC4" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="666" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Rain Jan + Rain Feb + Rain Mar + Rain Apr + Rain May + Rain Jun + Rain Jul + Rain Aug + Rain Sep + Rain Oct + Rain Nov + Rain Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" source="R-DATA:" type="Int32" />
+            <Field name="City" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.Last.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.First.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Growing.Season.Length" source="R-DATA:" type="Int32" />
+            <Field name="Precip.Jan" source="R-DATA:" type="Double" />
+            <Field name="Precip.Feb" source="R-DATA:" type="Double" />
+            <Field name="Precip.Mar" source="R-DATA:" type="Double" />
+            <Field name="Precip.Apr" source="R-DATA:" type="Double" />
+            <Field name="Precip.May" source="R-DATA:" type="Double" />
+            <Field name="Precip.Jun" source="R-DATA:" type="Double" />
+            <Field name="Precip.Jul" source="R-DATA:" type="Double" />
+            <Field name="Precip.Aug" source="R-DATA:" type="Double" />
+            <Field name="Precip.Sep" source="R-DATA:" type="Double" />
+            <Field name="Precip.Oct" source="R-DATA:" type="Double" />
+            <Field name="Precip.Nov" source="R-DATA:" type="Double" />
+            <Field name="Precip.Dec" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jan" source="R-DATA:" type="Double" />
+            <Field name="Rain.Feb" source="R-DATA:" type="Double" />
+            <Field name="Rain.Mar" source="R-DATA:" type="Double" />
+            <Field name="Rain.Apr" source="R-DATA:" type="Double" />
+            <Field name="Rain.May" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jun" source="R-DATA:" type="Double" />
+            <Field name="Rain.Jul" source="R-DATA:" type="Double" />
+            <Field name="Rain.Aug" source="R-DATA:" type="Double" />
+            <Field name="Rain.Sep" source="R-DATA:" type="Double" />
+            <Field name="Rain.Oct" source="R-DATA:" type="Double" />
+            <Field name="Rain.Nov" source="R-DATA:" type="Double" />
+            <Field name="Rain.Dec" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jan" source="R-DATA:" type="Double" />
+            <Field name="Snow.Feb" source="R-DATA:" type="Double" />
+            <Field name="Snow.Mar" source="R-DATA:" type="Double" />
+            <Field name="Snow.Apr" source="R-DATA:" type="Double" />
+            <Field name="Snow.May" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jun" source="R-DATA:" type="Double" />
+            <Field name="Snow.Jul" source="R-DATA:" type="Double" />
+            <Field name="Snow.Aug" source="R-DATA:" type="Double" />
+            <Field name="Snow.Sep" source="R-DATA:" type="Double" />
+            <Field name="Snow.Oct" source="R-DATA:" type="Double" />
+            <Field name="Snow.Nov" source="R-DATA:" type="Double" />
+            <Field name="Snow.Dec" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jan" source="R-DATA:" type="Double" />
+            <Field name="Temp.Feb" source="R-DATA:" type="Double" />
+            <Field name="Temp.Mar" source="R-DATA:" type="Double" />
+            <Field name="Temp.Apr" source="R-DATA:" type="Double" />
+            <Field name="Temp.May" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jun" source="R-DATA:" type="Double" />
+            <Field name="Temp.Jul" source="R-DATA:" type="Double" />
+            <Field name="Temp.Aug" source="R-DATA:" type="Double" />
+            <Field name="Temp.Sep" source="R-DATA:" type="Double" />
+            <Field name="Temp.Oct" source="R-DATA:" type="Double" />
+            <Field name="Temp.Nov" source="R-DATA:" type="Double" />
+            <Field name="Temp.Dec" source="R-DATA:" type="Double" />
+            <Field name="Elevation" source="R-DATA:" type="Double" />
+            <Field name="Longitude" source="R-DATA:" type="Double" />
+            <Field name="Latitude" source="R-DATA:" type="Double" />
+            <Field name="LastWinterFreezeDiff" source="R-DATA:" type="Int32" />
+            <Field name="FirstWinterFreezeDiff" source="R-DATA:" type="Int32" />
+            <Field name="PC1" source="R-DATA:" type="Double" />
+            <Field name="PC2" source="R-DATA:" type="Double" />
+            <Field name="PC3" source="R-DATA:" type="Double" />
+            <Field name="PC4" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings>
+        <Position x="666" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="fields">Snow Jan + Snow Feb + Snow Mar + Snow Apr + Snow May + Snow Jun + Snow Jul + Snow Aug + Snow Sep + Snow Oct + Snow Nov + Snow Dec</Value>
+          <Value name="scale">True</Value>
+          <Value name="max components">2</Value>
+          <Value name="append pc">True</Value>
+          <Value name="num pc">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Principal_Components.yxmc" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="762" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_18a6690bfac54417ba91a5decdcda8f5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="762" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_c8af8c15e0634d8b99576c0206fa1e80_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="762" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_90424c164b854c3d93cb51c270612de0_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="966" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="StoreID" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="StoreID" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="StoreID" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="True" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Input_#2_StoreID" selected="True" rename="Input_#2_StoreID" />
+                <SelectField field="Input_#2_City" selected="True" rename="Input_#2_City" />
+                <SelectField field="Input_#2_State" selected="True" rename="Input_#2_State" />
+                <SelectField field="Input_#2_Date.Last.Winter.Freeze" selected="True" rename="Input_#2_Date.Last.Winter.Freeze" />
+                <SelectField field="Input_#2_Date.First.Winter.Freeze" selected="True" rename="Input_#2_Date.First.Winter.Freeze" />
+                <SelectField field="Input_#2_Growing.Season.Length" selected="True" rename="Input_#2_Growing.Season.Length" />
+                <SelectField field="Input_#2_Precip.Jan" selected="True" rename="Input_#2_Precip.Jan" />
+                <SelectField field="Input_#2_Precip.Feb" selected="True" rename="Input_#2_Precip.Feb" />
+                <SelectField field="Input_#2_Precip.Mar" selected="True" rename="Input_#2_Precip.Mar" />
+                <SelectField field="Input_#2_Precip.Apr" selected="True" rename="Input_#2_Precip.Apr" />
+                <SelectField field="Input_#2_Precip.May" selected="True" rename="Input_#2_Precip.May" />
+                <SelectField field="Input_#2_Precip.Jun" selected="True" rename="Input_#2_Precip.Jun" />
+                <SelectField field="Input_#2_Precip.Jul" selected="True" rename="Input_#2_Precip.Jul" />
+                <SelectField field="Input_#2_Precip.Aug" selected="True" rename="Input_#2_Precip.Aug" />
+                <SelectField field="Input_#2_Precip.Sep" selected="True" rename="Input_#2_Precip.Sep" />
+                <SelectField field="Input_#2_Precip.Oct" selected="True" rename="Input_#2_Precip.Oct" />
+                <SelectField field="Input_#2_Precip.Nov" selected="True" rename="Input_#2_Precip.Nov" />
+                <SelectField field="Input_#2_Precip.Dec" selected="True" rename="Input_#2_Precip.Dec" />
+                <SelectField field="Input_#2_Rain.Jan" selected="True" rename="Input_#2_Rain.Jan" />
+                <SelectField field="Input_#2_Rain.Feb" selected="True" rename="Input_#2_Rain.Feb" />
+                <SelectField field="Input_#2_Rain.Mar" selected="True" rename="Input_#2_Rain.Mar" />
+                <SelectField field="Input_#2_Rain.Apr" selected="True" rename="Input_#2_Rain.Apr" />
+                <SelectField field="Input_#2_Rain.May" selected="True" rename="Input_#2_Rain.May" />
+                <SelectField field="Input_#2_Rain.Jun" selected="True" rename="Input_#2_Rain.Jun" />
+                <SelectField field="Input_#2_Rain.Jul" selected="True" rename="Input_#2_Rain.Jul" />
+                <SelectField field="Input_#2_Rain.Aug" selected="True" rename="Input_#2_Rain.Aug" />
+                <SelectField field="Input_#2_Rain.Sep" selected="True" rename="Input_#2_Rain.Sep" />
+                <SelectField field="Input_#2_Rain.Oct" selected="True" rename="Input_#2_Rain.Oct" />
+                <SelectField field="Input_#2_Rain.Nov" selected="True" rename="Input_#2_Rain.Nov" />
+                <SelectField field="Input_#2_Rain.Dec" selected="True" rename="Input_#2_Rain.Dec" />
+                <SelectField field="Input_#2_Snow.Jan" selected="True" rename="Input_#2_Snow.Jan" />
+                <SelectField field="Input_#2_Snow.Feb" selected="True" rename="Input_#2_Snow.Feb" />
+                <SelectField field="Input_#2_Snow.Mar" selected="True" rename="Input_#2_Snow.Mar" />
+                <SelectField field="Input_#2_Snow.Apr" selected="True" rename="Input_#2_Snow.Apr" />
+                <SelectField field="Input_#2_Snow.May" selected="True" rename="Input_#2_Snow.May" />
+                <SelectField field="Input_#2_Snow.Jun" selected="True" rename="Input_#2_Snow.Jun" />
+                <SelectField field="Input_#2_Snow.Jul" selected="True" rename="Input_#2_Snow.Jul" />
+                <SelectField field="Input_#2_Snow.Aug" selected="True" rename="Input_#2_Snow.Aug" />
+                <SelectField field="Input_#2_Snow.Sep" selected="True" rename="Input_#2_Snow.Sep" />
+                <SelectField field="Input_#2_Snow.Oct" selected="True" rename="Input_#2_Snow.Oct" />
+                <SelectField field="Input_#2_Snow.Nov" selected="True" rename="Input_#2_Snow.Nov" />
+                <SelectField field="Input_#2_Snow.Dec" selected="True" rename="Input_#2_Snow.Dec" />
+                <SelectField field="Input_#2_Temp.Jan" selected="True" rename="Input_#2_Temp.Jan" />
+                <SelectField field="Input_#2_Temp.Feb" selected="True" rename="Input_#2_Temp.Feb" />
+                <SelectField field="Input_#2_Temp.Mar" selected="True" rename="Input_#2_Temp.Mar" />
+                <SelectField field="Input_#2_Temp.Apr" selected="True" rename="Input_#2_Temp.Apr" />
+                <SelectField field="Input_#2_Temp.May" selected="True" rename="Input_#2_Temp.May" />
+                <SelectField field="Input_#2_Temp.Jun" selected="True" rename="Input_#2_Temp.Jun" />
+                <SelectField field="Input_#2_Temp.Jul" selected="True" rename="Input_#2_Temp.Jul" />
+                <SelectField field="Input_#2_Temp.Aug" selected="True" rename="Input_#2_Temp.Aug" />
+                <SelectField field="Input_#2_Temp.Sep" selected="True" rename="Input_#2_Temp.Sep" />
+                <SelectField field="Input_#2_Temp.Oct" selected="True" rename="Input_#2_Temp.Oct" />
+                <SelectField field="Input_#2_Temp.Nov" selected="True" rename="Input_#2_Temp.Nov" />
+                <SelectField field="Input_#2_Temp.Dec" selected="True" rename="Input_#2_Temp.Dec" />
+                <SelectField field="Input_#2_Elevation" selected="True" rename="Input_#2_Elevation" />
+                <SelectField field="Input_#2_Longitude" selected="True" rename="Input_#2_Longitude" />
+                <SelectField field="Input_#2_Latitude" selected="True" rename="Input_#2_Latitude" />
+                <SelectField field="Input_#2_LastWinterFreezeDiff" selected="True" rename="Input_#2_LastWinterFreezeDiff" />
+                <SelectField field="Input_#2_FirstWinterFreezeDiff" selected="True" rename="Input_#2_FirstWinterFreezeDiff" />
+                <SelectField field="Input_#2_PC1" selected="True" rename="Input_#2_PC1" />
+                <SelectField field="Input_#2_PC2" selected="True" rename="Input_#2_PC2" />
+                <SelectField field="Input_#3_StoreID" selected="True" rename="Input_#3_StoreID" />
+                <SelectField field="Input_#3_City" selected="True" rename="Input_#3_City" />
+                <SelectField field="Input_#3_State" selected="True" rename="Input_#3_State" />
+                <SelectField field="Input_#3_Date.Last.Winter.Freeze" selected="True" rename="Input_#3_Date.Last.Winter.Freeze" />
+                <SelectField field="Input_#3_Date.First.Winter.Freeze" selected="True" rename="Input_#3_Date.First.Winter.Freeze" />
+                <SelectField field="Input_#3_Growing.Season.Length" selected="True" rename="Input_#3_Growing.Season.Length" />
+                <SelectField field="Input_#3_Precip.Jan" selected="True" rename="Input_#3_Precip.Jan" />
+                <SelectField field="Input_#3_Precip.Feb" selected="True" rename="Input_#3_Precip.Feb" />
+                <SelectField field="Input_#3_Precip.Mar" selected="True" rename="Input_#3_Precip.Mar" />
+                <SelectField field="Input_#3_Precip.Apr" selected="True" rename="Input_#3_Precip.Apr" />
+                <SelectField field="Input_#3_Precip.May" selected="True" rename="Input_#3_Precip.May" />
+                <SelectField field="Input_#3_Precip.Jun" selected="True" rename="Input_#3_Precip.Jun" />
+                <SelectField field="Input_#3_Precip.Jul" selected="True" rename="Input_#3_Precip.Jul" />
+                <SelectField field="Input_#3_Precip.Aug" selected="True" rename="Input_#3_Precip.Aug" />
+                <SelectField field="Input_#3_Precip.Sep" selected="True" rename="Input_#3_Precip.Sep" />
+                <SelectField field="Input_#3_Precip.Oct" selected="True" rename="Input_#3_Precip.Oct" />
+                <SelectField field="Input_#3_Precip.Nov" selected="True" rename="Input_#3_Precip.Nov" />
+                <SelectField field="Input_#3_Precip.Dec" selected="True" rename="Input_#3_Precip.Dec" />
+                <SelectField field="Input_#3_Rain.Jan" selected="True" rename="Input_#3_Rain.Jan" />
+                <SelectField field="Input_#3_Rain.Feb" selected="True" rename="Input_#3_Rain.Feb" />
+                <SelectField field="Input_#3_Rain.Mar" selected="True" rename="Input_#3_Rain.Mar" />
+                <SelectField field="Input_#3_Rain.Apr" selected="True" rename="Input_#3_Rain.Apr" />
+                <SelectField field="Input_#3_Rain.May" selected="True" rename="Input_#3_Rain.May" />
+                <SelectField field="Input_#3_Rain.Jun" selected="True" rename="Input_#3_Rain.Jun" />
+                <SelectField field="Input_#3_Rain.Jul" selected="True" rename="Input_#3_Rain.Jul" />
+                <SelectField field="Input_#3_Rain.Aug" selected="True" rename="Input_#3_Rain.Aug" />
+                <SelectField field="Input_#3_Rain.Sep" selected="True" rename="Input_#3_Rain.Sep" />
+                <SelectField field="Input_#3_Rain.Oct" selected="True" rename="Input_#3_Rain.Oct" />
+                <SelectField field="Input_#3_Rain.Nov" selected="True" rename="Input_#3_Rain.Nov" />
+                <SelectField field="Input_#3_Rain.Dec" selected="True" rename="Input_#3_Rain.Dec" />
+                <SelectField field="Input_#3_Snow.Jan" selected="True" rename="Input_#3_Snow.Jan" />
+                <SelectField field="Input_#3_Snow.Feb" selected="True" rename="Input_#3_Snow.Feb" />
+                <SelectField field="Input_#3_Snow.Mar" selected="True" rename="Input_#3_Snow.Mar" />
+                <SelectField field="Input_#3_Snow.Apr" selected="True" rename="Input_#3_Snow.Apr" />
+                <SelectField field="Input_#3_Snow.May" selected="True" rename="Input_#3_Snow.May" />
+                <SelectField field="Input_#3_Snow.Jun" selected="True" rename="Input_#3_Snow.Jun" />
+                <SelectField field="Input_#3_Snow.Jul" selected="True" rename="Input_#3_Snow.Jul" />
+                <SelectField field="Input_#3_Snow.Aug" selected="True" rename="Input_#3_Snow.Aug" />
+                <SelectField field="Input_#3_Snow.Sep" selected="True" rename="Input_#3_Snow.Sep" />
+                <SelectField field="Input_#3_Snow.Oct" selected="True" rename="Input_#3_Snow.Oct" />
+                <SelectField field="Input_#3_Snow.Nov" selected="True" rename="Input_#3_Snow.Nov" />
+                <SelectField field="Input_#3_Snow.Dec" selected="True" rename="Input_#3_Snow.Dec" />
+                <SelectField field="Input_#3_Temp.Jan" selected="True" rename="Input_#3_Temp.Jan" />
+                <SelectField field="Input_#3_Temp.Feb" selected="True" rename="Input_#3_Temp.Feb" />
+                <SelectField field="Input_#3_Temp.Mar" selected="True" rename="Input_#3_Temp.Mar" />
+                <SelectField field="Input_#3_Temp.Apr" selected="True" rename="Input_#3_Temp.Apr" />
+                <SelectField field="Input_#3_Temp.May" selected="True" rename="Input_#3_Temp.May" />
+                <SelectField field="Input_#3_Temp.Jun" selected="True" rename="Input_#3_Temp.Jun" />
+                <SelectField field="Input_#3_Temp.Jul" selected="True" rename="Input_#3_Temp.Jul" />
+                <SelectField field="Input_#3_Temp.Aug" selected="True" rename="Input_#3_Temp.Aug" />
+                <SelectField field="Input_#3_Temp.Sep" selected="True" rename="Input_#3_Temp.Sep" />
+                <SelectField field="Input_#3_Temp.Oct" selected="True" rename="Input_#3_Temp.Oct" />
+                <SelectField field="Input_#3_Temp.Nov" selected="True" rename="Input_#3_Temp.Nov" />
+                <SelectField field="Input_#3_Temp.Dec" selected="True" rename="Input_#3_Temp.Dec" />
+                <SelectField field="Input_#3_Elevation" selected="True" rename="Input_#3_Elevation" />
+                <SelectField field="Input_#3_Longitude" selected="True" rename="Input_#3_Longitude" />
+                <SelectField field="Input_#3_Latitude" selected="True" rename="Input_#3_Latitude" />
+                <SelectField field="Input_#3_LastWinterFreezeDiff" selected="True" rename="Input_#3_LastWinterFreezeDiff" />
+                <SelectField field="Input_#3_FirstWinterFreezeDiff" selected="True" rename="Input_#3_FirstWinterFreezeDiff" />
+                <SelectField field="Input_#3_PC1" selected="True" rename="Input_#3_PC1" />
+                <SelectField field="Input_#3_PC2" selected="True" rename="Input_#3_PC2" />
+                <SelectField field="Input_#3_PC3" selected="True" rename="Input_#3_PC3" />
+                <SelectField field="Input_#3_PC4" selected="True" rename="Input_#3_PC4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1050" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_2320_d885cd802f33428daffa9d70fbc65c30_\Engine_5300_914ea4b2c6694ce19d1c7f3805650b0b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
   </Nodes>
   <Connections>
@@ -618,7 +1104,7 @@
       <Origin ToolID="7" Connection="Interactive" />
       <Destination ToolID="8" Connection="Input" />
     </Connection>
-    <Connection>
+    <Connection name="TempPCA">
       <Origin ToolID="10" Connection="Reports" />
       <Destination ToolID="12" Connection="Input" />
     </Connection>
@@ -626,9 +1112,53 @@
       <Origin ToolID="10" Connection="Output" />
       <Destination ToolID="15" Connection="Input" />
     </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="11" Connection="True" />
       <Destination ToolID="10" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="16" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="17" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="18" Connection="Data Input" />
+    </Connection>
+    <Connection name="PercipPCA">
+      <Origin ToolID="16" Connection="Reports" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="RainPCA">
+      <Origin ToolID="17" Connection="Reports" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Reports" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

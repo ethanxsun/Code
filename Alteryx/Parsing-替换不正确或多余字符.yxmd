@@ -131,7 +131,7 @@ PHONE = ReplaceChar([PHONE], ")/", "-")
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>数据清洗_替换</Name>
+      <Name>清洗电话号码</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
