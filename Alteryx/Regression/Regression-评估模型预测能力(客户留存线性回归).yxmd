@@ -8,7 +8,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -27,18 +27,18 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Customer Key" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="First Name" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Last Name" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Customer Segment" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Income" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Reedemer" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Region" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Spend" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Status" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Stays Per Year" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Total Days Stayed" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Years Of Loyalty" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Customer Key" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="First Name" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Last Name" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Customer Segment" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Income" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Reedemer" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Spend" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Status" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Stays Per Year" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Total Days Stayed" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Years Of Loyalty" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -155,7 +155,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_6656_5144e5117f254bf88afec665eb5f880a_\Engine_6800_b1778a3f57c14de6894541b11c0bb48b_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9284_fef846619a0d4deb870ba4d4577a49bb_\Engine_9136_fca3b79602e4417a8a46a0993ffabc56_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -179,11 +179,68 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="606" y="78" />
+        <Position x="630" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_6656_5144e5117f254bf88afec665eb5f880a_\Engine_6800_09c0710d76754de6825d2c12ed376a1d_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9284_fef846619a0d4deb870ba4d4577a49bb_\Engine_9136_1c2bc53e0f6442e1a6fbdf9f707e9f0c_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="738" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target.level" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="predictions">
+          <RecordInfo>
+            <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="stepwise_log" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="error_measures">
+          <RecordInfo>
+            <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Accuracy" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_No" source="R-DATA:" type="Double" />
+            <Field name="Accuracy_Yes" source="R-DATA:" type="Double" />
+            <Field name="F1" source="R-DATA:" type="Double" />
+            <Field name="AUC" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Model Comparison.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="870" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_9284_fef846619a0d4deb870ba4d4577a49bb_\Engine_9136_a5f27297e5074f2d9d949b77aa211b9f_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -228,12 +285,24 @@
       <Destination ToolID="13" Connection="Left Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="6" Connection="Validation" />
+      <Destination ToolID="17" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Models" />
+    </Connection>
+    <Connection>
       <Origin ToolID="7" Connection="Interactive Report" />
       <Destination ToolID="15" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="13" Connection="Reports" />
       <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Report" />
+      <Destination ToolID="18" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -254,7 +323,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Logistic回归(Stepwise)</Name>
+      <Name>Regression-评估模型预测能力(客户留存线性回归)</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

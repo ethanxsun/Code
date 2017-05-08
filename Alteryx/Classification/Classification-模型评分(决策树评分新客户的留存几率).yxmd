@@ -3,19 +3,22 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="54" />
+        <Position x="66" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Y:\Data\AlteryxAnalytics\CustomerRedeemer\RedeemerPredictor.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Y:\Data\AlteryxAnalytics\Classification\hotel_loyalty_redeemer.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>RedeemerPredictor.yxdb</DefaultAnnotationText>
+          <DefaultAnnotationText>hotel_loyalty_redeemer.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -27,12 +30,12 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="162" />
+        <Position x="66" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -49,20 +52,23 @@
           <DefaultAnnotationText>hotelloyaltydata.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Customer Key" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="First Name" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Last Name" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Customer Segment" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Income" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Reedemer" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Region" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Spend" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Status" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Stays Per Year" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Total Days Stayed" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Years Of Loyalty" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Customer Key" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="First Name" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Last Name" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Customer Segment" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Income" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Reedemer" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Spend" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Status" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Stays Per Year" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Total Days Stayed" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Years Of Loyalty" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -70,7 +76,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="138" y="162" />
+        <Position x="150" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -93,7 +99,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings>
-        <Position x="258" y="126" />
+        <Position x="270" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -135,11 +141,11 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="354" y="198" />
+        <Position x="366" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5084_c8bfdfe25498423d8c40ab44fa2876eb_\Engine_6800_5f6f2ff7a6fa4aadbd0cbb7185af62fd_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7928_48f5e1e0749442aaad6d14c974d3d692_\Engine_9136_91157b9351bb4f7da62f345761b27480_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -163,7 +169,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="366" y="114" />
+        <Position x="378" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -186,7 +192,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="462" y="102" />
+        <Position x="474" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -209,7 +215,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="570" y="102" />
+        <Position x="582" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -227,7 +233,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="42" y="18" width="264" height="36" />
+        <Position x="54" y="54" width="264" height="36" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -247,7 +253,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="330" y="66" width="156" height="40" />
+        <Position x="342" y="102" width="156" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -267,7 +273,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
-        <Position x="654" y="102" />
+        <Position x="666" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -302,11 +308,11 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="726" y="102" />
+        <Position x="738" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5084_c8bfdfe25498423d8c40ab44fa2876eb_\Engine_6800_dd2e5852457542a3b292869249d644e4_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7928_48f5e1e0749442aaad6d14c974d3d692_\Engine_9136_dd76fe1ac89b42cdac68db09d3b81b4e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -385,7 +391,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>模型封装与评分(决策树)</Name>
+      <Name>Classification-模型封装与评分(决策树)</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

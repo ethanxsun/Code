@@ -3,12 +3,12 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="162" />
+        <Position x="54" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -25,20 +25,23 @@
           <DefaultAnnotationText>hotelloyaltydata.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Customer Key" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="First Name" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Last Name" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Customer Segment" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Income" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Reedemer" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Region" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Spend" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Status" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Stays Per Year" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Total Days Stayed" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
-            <Field name="Years Of Loyalty" size="254" source="File: Y:\Data\AlteryxAnalytics\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Customer Key" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="First Name" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Last Name" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Customer Segment" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Income" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Reedemer" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Spend" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Status" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Stays Per Year" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Total Days Stayed" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
+            <Field name="Years Of Loyalty" size="254" source="File: Y:\Data\AlteryxAnalytics\Regression\hotelloyaltydata.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -46,7 +49,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="174" y="162" />
+        <Position x="150" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -69,7 +72,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings>
-        <Position x="270" y="162" />
+        <Position x="246" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -87,12 +90,12 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings Plugin="Decision_Tree">
-        <Position x="354" y="150" />
+        <Position x="330" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Value name="curPage">Customize</Value>
-          <Value name="curTab">crossvalidation</Value>
+          <Value name="curTab">model</Value>
           <Value name="curToggle">toggle-hyperparameters</Value>
           <Value name="display.static">True</Value>
           <Value name="set_seed_cv">True</Value>
@@ -179,13 +182,35 @@
       </Properties>
       <EngineSettings Macro="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" EngineDll="Macro" EngineDllEntryPoint="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" />
     </Node>
-    <Node ToolID="6">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="426" y="210" />
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="462" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3208_b2747280dbda4cdbb4c580e5aec02092_\Engine_6800_868bbb61705e428791958ff20040e112_.yxdb</TempFile>
+          <File FileFormat="19" MaxRecords="">Y:\Data\AlteryxAnalytics\Classification\hotel_loyalty_redeemer.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>hotel_loyalty_redeemer.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_11060_e9cc008874a94c9ea00606ae4a443847_\Engine_9136_5838a22d5e4d4a6480929a494aac24f4_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -207,131 +232,13 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="7">
+    <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
         <Position x="462" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3208_b2747280dbda4cdbb4c580e5aec02092_\Engine_6800_f4175e989e9543f4a3f93e4f57222c57_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="8">
-      <GuiSettings>
-        <Position x="222" y="282" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="Select Fields">Customer Key=False,First Name=False,Last Name=False,Customer Segment=True,Income=True,Reedemer=True,Region=True,Spend=True,Status=True,Stays Per Year=True,Total Days Stayed=True,Years Of Loyalty=True</Value>
-          <Value name="Sample Data">False</Value>
-          <Value name="Number">True</Value>
-          <Value name="NNumber">5000</Value>
-          <Value name="Percent">False</Value>
-          <Value name="NPercent">10</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
-    </Node>
-    <Node ToolID="9">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="306" y="294" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3208_b2747280dbda4cdbb4c580e5aec02092_\Engine_6800_43f82995d6284296afe1b5dad1d331ed_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Report</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="10">
-      <GuiSettings>
-        <Position x="450" y="30" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="target.level">Yes</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-        <MetaInfo connection="predictions">
-          <RecordInfo>
-            <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="DT_Redeemer" size="1073741823" source="R-DATA:" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="error_measures">
-          <RecordInfo>
-            <Field name="Model" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="Accuracy" source="R-DATA:" type="Double" />
-            <Field name="Accuracy_No" source="R-DATA:" type="Double" />
-            <Field name="Accuracy_Yes" source="R-DATA:" type="Double" />
-            <Field name="F1" source="R-DATA:" type="Double" />
-            <Field name="AUC" source="R-DATA:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="Report">
-          <RecordInfo>
-            <Field name="Group" size="64" source="Formula: (Multiple Sources)" type="V_String" />
-            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings Macro="Model Comparison.yxmc" />
-    </Node>
-    <Node ToolID="11">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="582" y="42" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_3208_b2747280dbda4cdbb4c580e5aec02092_\Engine_6800_53a91536aa3b4e02b2cf132bbd683433_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_11060_e9cc008874a94c9ea00606ae4a443847_\Engine_9136_2d0191dd4c3e4935ab5b519de57cf2f4_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -364,36 +271,20 @@
       <Destination ToolID="3" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="8" Connection="Field Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="3" Connection="Estimation" />
       <Destination ToolID="4" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="3" Connection="Validation" />
-      <Destination ToolID="10" Connection="Data" />
-    </Connection>
-    <Connection>
       <Origin ToolID="4" Connection="Output" />
-      <Destination ToolID="10" Connection="Models" />
+      <Destination ToolID="10" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Interactive" />
-      <Destination ToolID="6" Connection="Input" />
+      <Destination ToolID="11" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="4" Connection="Reports" />
-      <Destination ToolID="7" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="8" Connection="Interactive" />
-      <Destination ToolID="9" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="10" Connection="Report" />
-      <Destination ToolID="11" Connection="Input" />
+      <Destination ToolID="12" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -414,7 +305,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>模型比较</Name>
+      <Name>Classification-决策树(预测客户保留)</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

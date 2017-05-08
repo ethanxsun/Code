@@ -1,9 +1,29 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="11.0">
   <Nodes>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="222" y="42" width="312" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>find optimized k</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="66" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -16,9 +36,6 @@
           <DefaultAnnotationText>WeatherPCAData.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="StoreID" size="1073741823" source="R-DATA:" type="V_WString" />
@@ -52,7 +69,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="150" y="66" />
+        <Position x="126" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -71,7 +88,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings>
-        <Position x="222" y="66" />
+        <Position x="246" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -79,9 +96,9 @@
           <Value name="standardize">True</Value>
           <Value name="z score">True</Value>
           <Value name="unit interval">False</Value>
-          <Value name="k-means">False</Value>
+          <Value name="k-means">True</Value>
           <Value name="k-medians">False</Value>
-          <Value name="neural gas">True</Value>
+          <Value name="neural gas">False</Value>
           <Value name="min clus">6</Value>
           <Value name="max clus">12</Value>
           <Value name="bootstrap rep">50</Value>
@@ -108,11 +125,11 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="306" y="66" />
+        <Position x="330" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7612_cebcba3a57c144abbde78edd63676d92_\Engine_6456_f730d05a956241f4aa3cc2501189dd89_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5832_35863c9a69764f55801ad4232ea780ea_\Engine_1952_17c932ab0bd24180ac7e2e8600a92226_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -134,6 +151,194 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="246" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model name">climate_cluster</Value>
+          <Value name="the fields">Growing.Season.Length + Elevation + LastWinterFreezeDiff + FirstWinterFreezeDiff + TempPCA1 + TempPCA2 + TempPCA3 + PercipPCA1 + PercipPCA2 + PercipPCA3 + PercipPCA4 + RainPCA1 + RainPCA2 + RainPCA3 + RainPCA4 + SnowPCA1 + SnowPCA2</Value>
+          <Value name="standardize">True</Value>
+          <Value name="z score">True</Value>
+          <Value name="unit interval">False</Value>
+          <Value name="k-means">True</Value>
+          <Value name="k-medians">False</Value>
+          <Value name="neural gas">False</Value>
+          <Value name="num clus">8</Value>
+          <Value name="num seeds">10</Value>
+          <Value name="plot points">True</Value>
+          <Value name="plot centroids">False</Value>
+          <Value name="max comp">2</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="grp" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="out" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Reports">
+          <RecordInfo>
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Sum_Dists" size="1073741823" source="R-DATA:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\K-Centroids_Cluster_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="354" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5832_35863c9a69764f55801ad4232ea780ea_\Engine_1952_82c16e01333748d89c987678ff496e15_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="390" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="clus name">Cluster</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="City" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="State" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.Last.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Date.First.Winter.Freeze" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Growing.Season.Length" source="R-DATA:" type="Double" />
+            <Field name="Elevation" source="R-DATA:" type="Double" />
+            <Field name="Longitude" source="R-DATA:" type="Double" />
+            <Field name="Latitude" source="R-DATA:" type="Double" />
+            <Field name="LastWinterFreezeDiff" source="R-DATA:" type="Double" />
+            <Field name="FirstWinterFreezeDiff" source="R-DATA:" type="Double" />
+            <Field name="TempPCA1" source="R-DATA:" type="Double" />
+            <Field name="TempPCA2" source="R-DATA:" type="Double" />
+            <Field name="TempPCA3" source="R-DATA:" type="Double" />
+            <Field name="PercipPCA1" source="R-DATA:" type="Double" />
+            <Field name="PercipPCA2" source="R-DATA:" type="Double" />
+            <Field name="PercipPCA3" source="R-DATA:" type="Double" />
+            <Field name="PercipPCA4" source="R-DATA:" type="Double" />
+            <Field name="RainPCA1" source="R-DATA:" type="Double" />
+            <Field name="RainPCA2" source="R-DATA:" type="Double" />
+            <Field name="RainPCA3" source="R-DATA:" type="Double" />
+            <Field name="RainPCA4" source="R-DATA:" type="Double" />
+            <Field name="SnowPCA1" source="R-DATA:" type="Double" />
+            <Field name="SnowPCA2" source="R-DATA:" type="Double" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Append_Cluster.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="498" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="StoreID" selected="True" />
+            <SelectField field="City" selected="True" />
+            <SelectField field="State" selected="True" />
+            <SelectField field="Date.Last.Winter.Freeze" selected="True" />
+            <SelectField field="Date.First.Winter.Freeze" selected="True" />
+            <SelectField field="Growing.Season.Length" selected="True" />
+            <SelectField field="Elevation" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="LastWinterFreezeDiff" selected="True" />
+            <SelectField field="FirstWinterFreezeDiff" selected="True" />
+            <SelectField field="Cluster" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="606" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">Y:\Data\AlteryxAnalytics\ClusteringNSegmemtation\WealtherClusterResult.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>WealtherClusterResult.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -142,11 +347,31 @@
     </Connection>
     <Connection>
       <Origin ToolID="6" Connection="Output" />
-      <Destination ToolID="7" Connection="Data Input" />
+      <Destination ToolID="10" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="15" Connection="Second Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="15" Connection="First Input" />
     </Connection>
     <Connection>
       <Origin ToolID="7" Connection="Reports" />
       <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Reports" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

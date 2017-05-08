@@ -3,12 +3,12 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="78" y="150" />
+        <Position x="54" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">X:\Data\AlteryxAnalytics\employees-transporatationdata.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Y:\Data\AlteryxAnalytics\Classification\employees-transporatationdata.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -34,7 +34,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings>
-        <Position x="174" y="150" />
+        <Position x="150" y="162" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -47,15 +47,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="Decision_Tree">
-        <Position x="270" y="42" />
+        <Position x="246" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -86,7 +83,7 @@
           <Value name="pruning_plot_size">prune.inches</Value>
           <Value name="prune.inches">True</Value>
           <Value name="prune.centimeters">False</Value>
-          <Value name="Model Name">DT_trans</Value>
+          <Value name="Model Name">decision_tree</Value>
           <Value name="Y Var">Mode</Value>
           <Value name="X Vars">GENDER,Age,MARITAL STATUS,DriveDistanceMiles</Value>
           <Value name="model.algorithm">rpart</Value>
@@ -141,7 +138,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>DT_trans</DefaultAnnotationText>
+          <DefaultAnnotationText>decision_tree</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -149,11 +146,11 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings>
-        <Position x="270" y="174" />
+        <Position x="246" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="Model Name">RF_trans</Value>
+          <Value name="Model Name">random_forest_model</Value>
           <Value name="Y Var">Mode</Value>
           <Value name="X Vars">GENDER + Age + MARITAL STATUS + DriveDistanceMiles</Value>
           <Value name="Num Trees">500</Value>
@@ -187,11 +184,11 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings>
-        <Position x="270" y="282" />
+        <Position x="246" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Value name="model.name">BT_trans</Value>
+          <Value name="model.name">boosted_tree_model</Value>
           <Value name="select.target">Mode</Value>
           <Value name="select.predictors">Employee ID=False,GENDER=True,Age=True,MARITAL STATUS=True,DriveDistanceMiles=True,Mode=False</Value>
           <Value name="use.weights">False</Value>
@@ -243,7 +240,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="462" y="162" />
+        <Position x="438" y="174" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -262,7 +259,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings>
-        <Position x="594" y="66" />
+        <Position x="570" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -273,15 +270,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="predictions">
           <RecordInfo>
             <Field name="Actual" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="DT_trans" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="RF_trans" size="1073741823" source="R-DATA:" type="V_WString" />
-            <Field name="BT_trans" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="decision_tree" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="random_forest_model" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="boosted_tree_model" size="1073741823" source="R-DATA:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="error_measures">
@@ -305,11 +299,11 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="690" y="90" />
+        <Position x="666" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7028_3302c69a296f4f689b23b32902036a1d_\Engine_2544_bfd45ce5992f44029e60e1042c9f79a6_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7728_8f763e5cbf1b4c349c1a82081af0ba8d_\Engine_9136_abbfa8c18db045e6aaa0a902293387ac_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -392,7 +386,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>模型比较(三种树模型)</Name>
+      <Name>Classification-模型比较(比较三种树模型预测员工交通方式选择)</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

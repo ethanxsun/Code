@@ -3,12 +3,12 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="102" y="114" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">X:\Data\AlteryxAnalytics\missingemployees.csv</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">Y:\Data\AlteryxAnalytics\Classification\missingemployees_toscore.csv</File>
           <FormatSpecificOptions>
             <CodePage>28591</CodePage>
             <Delimeter>,</Delimeter>
@@ -22,7 +22,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>missingemployees.csv</DefaultAnnotationText>
+          <DefaultAnnotationText>missingemployees_toscore.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <Dependencies>
@@ -30,11 +30,11 @@
         </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Employee ID" size="254" source="File: X:\Data\AlteryxAnalytics\missingemployees.csv" type="V_String" />
-            <Field name="GENDER" size="254" source="File: X:\Data\AlteryxAnalytics\missingemployees.csv" type="V_String" />
-            <Field name="Age" size="254" source="File: X:\Data\AlteryxAnalytics\missingemployees.csv" type="V_String" />
-            <Field name="MARITAL STATUS" size="254" source="File: X:\Data\AlteryxAnalytics\missingemployees.csv" type="V_String" />
-            <Field name="DriveDistanceMiles" size="254" source="File: X:\Data\AlteryxAnalytics\missingemployees.csv" type="V_String" />
+            <Field name="Employee ID" size="254" source="File: Y:\Data\AlteryxAnalytics\Classification\missingemployees_toscore.csv" type="V_String" />
+            <Field name="GENDER" size="254" source="File: Y:\Data\AlteryxAnalytics\Classification\missingemployees_toscore.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: Y:\Data\AlteryxAnalytics\Classification\missingemployees_toscore.csv" type="V_String" />
+            <Field name="MARITAL STATUS" size="254" source="File: Y:\Data\AlteryxAnalytics\Classification\missingemployees_toscore.csv" type="V_String" />
+            <Field name="DriveDistanceMiles" size="254" source="File: Y:\Data\AlteryxAnalytics\Classification\missingemployees_toscore.csv" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -42,17 +42,17 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="102" y="294" />
+        <Position x="54" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">X:\Code\Alteryx\PredictTransMode_DT.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Y:\Data\AlteryxAnalytics\Classification\dt_result_predict_trans_mode.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>PredictTransMode_DT.yxdb</DefaultAnnotationText>
+          <DefaultAnnotationText>dt_result_predict_trans_mode.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <Dependencies>
@@ -69,7 +69,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="222" y="114" />
+        <Position x="174" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -91,7 +91,7 @@
     </Node>
     <Node ToolID="4">
       <GuiSettings>
-        <Position x="378" y="210" />
+        <Position x="330" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -110,9 +110,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Employee.ID" source="R-DATA:" type="Double" />
@@ -130,11 +127,11 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="678" y="210" />
+        <Position x="630" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5428_a4e2930f53eb46dd87f4349e8c9e4222_\Engine_2544_69dcca98745b42f3ab68959c611598de_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_8300_154a374ef9834405b3fbbfc0b65854f9_\Engine_9136_c9206ca24b504ca6bd731144dc4b8b85_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -158,7 +155,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="474" y="210" />
+        <Position x="426" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -178,7 +175,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="558" y="210" />
+        <Position x="510" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -205,11 +202,11 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="798" y="306" />
+        <Position x="750" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5428_a4e2930f53eb46dd87f4349e8c9e4222_\Engine_2544_b4ce60170a5148f4a3e0a1b9cb332857_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_8300_154a374ef9834405b3fbbfc0b65854f9_\Engine_9136_4c159723d1cc4c599dfc6f06f3fe1106_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -233,7 +230,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="702" y="306" />
+        <Position x="654" y="246" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -304,7 +301,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>模型评分(决策树预测交通方式)</Name>
+      <Name>Classification-模型评分(决策树预测员工交通方式选择)</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
