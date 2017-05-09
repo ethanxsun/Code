@@ -3,12 +3,12 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="30" y="18" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Y:\R\Data\linear-example-data.xlsx|||`Sheet1$`</File>
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Y:\Data\AlteryxAnalytics\Regression\ticket_data.xlsx|||`Sheet1$`</File>
           <FormatSpecificOptions>
             <FirstRowData>False</FirstRowData>
             <ImportLine>1</ImportLine>
@@ -16,7 +16,7 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>linear-example-data.xlsx
+          <DefaultAnnotationText>ticket_data.xlsx
 Table=`Sheet1$`</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -25,11 +25,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Client ID" size="255" source="File: Y:\R\Data\linear-example-data.xlsx|||`Sheet1$`" type="V_String" />
-            <Field name="Average Number of Tickets" source="File: Y:\R\Data\linear-example-data.xlsx|||`Sheet1$`" type="Double" />
-            <Field name="Number of Employees" source="File: Y:\R\Data\linear-example-data.xlsx|||`Sheet1$`" type="Double" />
-            <Field name="Value of Contract" source="File: Y:\R\Data\linear-example-data.xlsx|||`Sheet1$`" type="Double" />
-            <Field name="Industry" size="255" source="File: Y:\R\Data\linear-example-data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Client ID" size="255" source="File: Y:\Data\AlteryxAnalytics\Regression\ticket_data.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Average Number of Tickets" source="File: Y:\Data\AlteryxAnalytics\Regression\ticket_data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Number of Employees" source="File: Y:\Data\AlteryxAnalytics\Regression\ticket_data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Value of Contract" source="File: Y:\Data\AlteryxAnalytics\Regression\ticket_data.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Industry" size="255" source="File: Y:\Data\AlteryxAnalytics\Regression\ticket_data.xlsx|||`Sheet1$`" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -37,7 +37,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="Linear_Regression">
-        <Position x="186" y="18" />
+        <Position x="210" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -50,7 +50,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
           <Value name="set_seed_external_cv">True</Value>
           <Value name="lambda_1se">True</Value>
           <Value name="lambda_min">False</Value>
-          <Value name="Model Name">LinearModelSimple</Value>
+          <Value name="Model Name">predict_ticket_amnt</Value>
           <Value name="Y Var">Average Number of Tickets</Value>
           <Value name="X Vars">Number of Employees,Value of Contract,Industry</Value>
           <Value name="Omit Constant">False</Value>
@@ -70,7 +70,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>LinearModelSimple</DefaultAnnotationText>
+          <DefaultAnnotationText>predict_ticket_amnt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -78,11 +78,11 @@ Table=`Sheet1$`</DefaultAnnotationText>
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="282" y="18" />
+        <Position x="306" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_7796_3e32dd73b37c4086b94a3b7b437c96f5_\Engine_8092_78ba3ffd1472450e9ba9115f57237ec9_.yxdb</TempFile>
+          <TempFile>C:\Users\Ethan\AppData\Local\Temp\Engine_5888_558594cba31e4c7cb088739e1400b53d_\Engine_2812_b5d3ef753c7a466689b0f345526e7200_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -133,7 +133,7 @@ Table=`Sheet1$`</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>PredictTicketAmount</Name>
+      <Name>预测Ticket处理量</Name>
       <Description />
       <RootToolName />
       <ToolVersion />

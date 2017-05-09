@@ -74,3 +74,10 @@ y <- x + rnorm(100)
 plot(x, y, type = "n")    # make the plot but not use data
 plot(x, y)
         
+
+
+
+
+
+
+
